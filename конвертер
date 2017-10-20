@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class конвертер {
+
+        public static void main(String[] args) {
+        
+        int x,k;	
+        String q = new String();
+        String a = new String();
+        StringBuffer kot = new StringBuffer();
+        Scanner qq = new Scanner(System.in);
+        System.out.print("Введите число в 10СС:");
+        x = qq.nextInt();
+        k = x;
+        while(x != 0)
+{
+        if(x %2 == 0) 
+{
+        x = x / 2;
+        q = q + "0";
+}
+        else if(x %2 == 1) 
+{
+        x = x / 2;
+        q=q+"1";
+}
+        else if(x == 2)
+{
+        x = x / 2;
+        q = q + "01";
+}}	 	
+        kot = new StringBuffer(q);
+        System.out.print("Число в 2СС равняется:" + kot.reverse()+ "\n");
+        System.out.printf("Число в 16СС равняется:%x\n", k);       
+		}}
+        
+        
